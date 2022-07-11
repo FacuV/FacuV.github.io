@@ -4,6 +4,7 @@ import { Cover } from './components/cover/Cover';
 import { Navbar } from './components/navbar/Navbar';
 import { About } from './components/about/About';
 import { Slider } from './components/slider/Slider';
+import { Helmet } from 'react-helmet';
 
 function App() {
   const [scrollHeight, setScrollHeight] = useState(0)
@@ -19,11 +20,20 @@ function App() {
 
   return (
     <div className="App">
-      
-      <Navbar isScrolling={scrollHeight}/>
-      <Cover />
-      <About />
-      <Slider />
+      <Helmet>
+
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="A simple website to show my portfolio" />
+        <meta name="keywords" content="portfolio, react, reactjs, javascript, portfolio website, portfolio website react" />
+        <meta name="author" content="Facundo Vicente" />
+
+        <Navbar isScrolling={scrollHeight}/>
+        <Cover />
+        <About />
+        <Slider />
+
+      </Helmet>
     </div>
   );
 }
