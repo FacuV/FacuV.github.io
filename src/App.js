@@ -23,7 +23,7 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="A simple website to show my portfolio" />
+        <meta name="description" content='A simple website to show my portfolio' />
         <meta name="keywords" content="portfolio, react, reactjs, javascript, portfolio website, portfolio website react" />
         <meta name="author" content="Facundo Vicente" />
         <title>Facundo Vicente</title>
